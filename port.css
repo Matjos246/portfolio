@@ -1,0 +1,193 @@
+
+    /* === Reset & Basics === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      word-spacing: 1px;
+      letter-spacing: 1px;
+      /* font-size: 20px; */
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+
+
+    nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background: #222;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+      transition: 0.7s ease;
+    }
+
+    nav a:hover {
+      color: rgb(97, 88, 25,8 );
+      color: grey;
+    }
+
+    section {
+      min-height: 10vh;
+      padding: 6rem 2rem 2rem;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.6s ease;
+   
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .hero{
+      text-align: center;
+    }
+    .container{
+      text-align: center;
+       word-spacing: 7px;
+    letter-spacing: 1px;
+    }
+    /* #projects{
+      background: #222;
+      color: #aaa;
+    } */
+
+    h1, h2 {
+      margin-bottom: 1rem;
+      color: gold;
+      text-align: center;
+      font-size: 25px;
+    }
+
+    .btn {
+      padding: 0.8rem 1.5rem;
+      background: gold;
+      color: #111;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: transform 0.3s;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      background: rgba(255, 255, 255, 0.2);
+    border:1px solid transparent;  
+    color: #fff;
+    cursor:pointer;
+    transition: 0.7s ease;
+    color: gold;
+    }
+    .text{
+      color: #222;
+    }
+ 
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #222;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+
+    /* outside css */
+    html {
+      scroll-behavior: smooth;
+    }
+    .carousel {
+      position: relative;
+      overflow: hidden;
+    
+      justify-items: center;
+      transition: transform 5s ease-in-out;
+     
+    }
+    
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .Display_card{
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      gap: 300px;
+    }
+    .card_5{
+     display: grid;
+    }
+    
+    .slides img, .service-card {
+      min-width: 100%;
+      max-width: 100%;
+    }
+    
+    .hero-carousel img {
+      height: 400px;
+      object-fit: cover;
+    }
+
+     .card-body p a{
+      color: rgba(36, 139, 180, 0.863);
+     }
+     .card-body p a:hover{
+      color: #aaa;
+     }
+     
+
+    .hero-text {
+      position: absolute;
+      top: 30%;
+      left: 10%;
+      color: white;
+    }
+    
+    .hero-text h1 {
+      font-size: 2.5rem;
+    }
+    
+    .hero-text p {
+      font-size: 1.2rem;
+    }
+    
+    .carousel-controls {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      text-align: center;
+      z-index: 10;
+    }
+    
+    .carousel-controls button {
+      background: rgba(0,0,0,0.5);
+      border: none;
+      color: white;
+      font-size: 2rem;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+    span{
+      font-size: 30px;
+    }
