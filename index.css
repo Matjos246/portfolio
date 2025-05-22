@@ -60,15 +60,11 @@
     .hero{
       text-align: center;
     }
-    .container{
+    .container .details{
       text-align: center;
        word-spacing: 7px;
     letter-spacing: 1px;
     }
-    /* #projects{
-      background: #222;
-      color: #aaa;
-    } */
 
     h1, h2 {
       margin-bottom: 1rem;
@@ -76,6 +72,14 @@
       text-align: center;
       font-size: 25px;
     }
+ h2:hover{
+      cursor: pointer;
+     color: rgb(138, 126, 126);
+    }
+      h1:hover{
+        /* cursor: progress; */
+        cursor: pointer;
+      }
 
     .btn {
       padding: 0.8rem 1.5rem;
@@ -120,7 +124,6 @@
     .carousel {
       position: relative;
       overflow: hidden;
-    
       justify-items: center;
       transition: transform 5s ease-in-out;
      
@@ -133,10 +136,10 @@
     .Display_card{
       display: flex;
       transition: transform 0.5s ease-in-out;
-      gap: 300px;
+      gap: 10px;
     }
     .card_5{
-     display: grid;
+     /* display: grid; */
     }
     
     .slides img, .service-card {
