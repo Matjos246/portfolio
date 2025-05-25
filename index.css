@@ -8,18 +8,14 @@
       letter-spacing: 1px;
       /* font-size: 20px; */
     }
-
-    html {
+       html {
       scroll-behavior: smooth;
     }
-
     body {
       font-family: sans-serif;
       background-color: #111;
       color: #fff;
     }
-
-
     nav {
       position: fixed;
       width: 100%;
@@ -40,7 +36,7 @@
     }
 
     nav a:hover {
-      color: rgb(97, 88, 25,8 );
+      /* color: rgb(97, 88, 25,8 ); */
       color: grey;
     }
 
@@ -49,8 +45,7 @@
       padding: 6rem 2rem 2rem;
       opacity: 0;
       transform: translateY(50px);
-      transition: all 0.6s ease;
-   
+      transition: all 0.6s ease;   
     }
 
     section.visible {
@@ -80,6 +75,20 @@
         /* cursor: progress; */
         cursor: pointer;
       }
+      .GetinTouch p{
+        justify-self: center; 
+        font-weight: bolder; 
+        color: orange;
+      }
+      .GetinTouch p:hover{
+        color:rgb(0, 110, 255);
+      }
+      .socialMedia{
+        display: flex;
+      }
+      .SocialRoute{
+        display: grid;
+      }
 
     .btn {
       padding: 0.8rem 1.5rem;
@@ -101,8 +110,15 @@
     .text{
       color: #222;
     }
- 
-
+    
+    .details a{
+      font-size: small;
+    text-decoration: none;
+    cursor: pointer;
+    }
+    .details a:hover{
+      color: #aaa;
+    }
     footer {
       text-align: center;
       padding: 2rem;
@@ -126,9 +142,7 @@
       overflow: hidden;
       justify-items: center;
       transition: transform 5s ease-in-out;
-     
-    }
-    
+    }    
     .slides {
       display: flex;
       transition: transform 0.5s ease-in-out;
@@ -138,28 +152,20 @@
       transition: transform 0.5s ease-in-out;
       gap: 10px;
     }
-    .card_5{
-     /* display: grid; */
-    }
-    
     .slides img, .service-card {
       min-width: 100%;
       max-width: 100%;
     }
-    
     .hero-carousel img {
       height: 400px;
       object-fit: cover;
     }
-
      .card-body p a{
       color: rgba(36, 139, 180, 0.863);
      }
      .card-body p a:hover{
       color: #aaa;
      }
-     
-
     .hero-text {
       position: absolute;
       top: 30%;
@@ -191,6 +197,17 @@
       margin: 0 10px;
       cursor: pointer;
     }
-    span{
-      font-size: 30px;
-    }
+
+.contact input, 
+.contact textarea,
+.contact button{
+    width: 15em;
+    height: 15vh;
+    padding:10px;
+    margin:10px 0;
+    border: 3px solid #ccc;
+    border-radius:7px;
+}
+.contact button:hover{
+    background: #555;
+}
