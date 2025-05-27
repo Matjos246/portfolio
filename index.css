@@ -1,6 +1,4 @@
-
-    /* === Reset & Basics === */
-    * {
+* {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -84,12 +82,17 @@
         color:rgb(0, 110, 255);
       }
       .socialMedia{
-        display: flex;
+       
       }
       .SocialRoute{
-        display: grid;
+      margin-top: 90px;
+          background-color: #ccc;
+          width: 200px;
       }
-
+      .whatsapp{
+      float: left;
+      padding-top: 40px;
+      }
     .btn {
       padding: 0.8rem 1.5rem;
       background: gold;
