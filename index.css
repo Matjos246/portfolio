@@ -5,6 +5,7 @@
       word-spacing: 1px;
       letter-spacing: 1px;
       /* font-size: 20px; */
+        transition: transform 5s ease-in-out;
     }
        html {
       scroll-behavior: smooth;
@@ -37,7 +38,12 @@
       /* color: rgb(97, 88, 25,8 ); */
       color: grey;
     }
-
+    #about{
+      padding-top: 10px;
+    }
+    #projects{
+      padding-top: 1px;
+    }
     section {
       min-height: 10vh;
       padding: 6rem 2rem 2rem;
@@ -58,6 +64,9 @@
        word-spacing: 7px;
     letter-spacing: 1px;
     }
+    .Display_card{
+      padding-top: 1px;
+    }
 
     h1, h2 {
       margin-bottom: 1rem;
@@ -73,6 +82,9 @@
         /* cursor: progress; */
         cursor: pointer;
       }
+      .GetinTouch{
+        /* background-color: #ffff; */
+      }
       .GetinTouch p{
         justify-self: center; 
         font-weight: bolder; 
@@ -85,20 +97,29 @@
        
       }
       .SocialRoute{
-      margin-top: 90px;
-          background-color: #ccc;
+      /* margin-top: 90px;
           width: 200px;
+          */
+          font-size: larger;
+        color: #aaa;
       }
+      .SocialRoute:hover{
+        color: beige;
+      }
+   
       .whatsapp{
       float: left;
       padding-top: 40px;
+      
       }
+    
     .btn {
       padding: 0.8rem 1.5rem;
+   
       background: gold;
       color: #111;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 15px;
       transition: transform 0.3s;
     }
     .btn:hover {
@@ -145,7 +166,12 @@
       overflow: hidden;
       justify-items: center;
       transition: transform 5s ease-in-out;
-    }    
+    } 
+  
+    .card-1, .card-2, .card_3, .card_4{
+      padding-right: 80px;
+      padding-bottom: 30px;
+    }  
     .slides {
       display: flex;
       transition: transform 0.5s ease-in-out;
@@ -183,14 +209,14 @@
     .hero-text p {
       font-size: 1.2rem;
     }
-    
+/*     
     .carousel-controls {
       position: absolute;
       top: 50%;
       width: 100%;
       text-align: center;
       z-index: 10;
-    }
+    } */
     
     .carousel-controls button {
       background: rgba(0,0,0,0.5);
@@ -200,17 +226,42 @@
       margin: 0 10px;
       cursor: pointer;
     }
-
+  .SocialRoute a{
+    color: #aaa;
+    text-decoration: none;
+  }
+   .SocialRoute a:hover{
+    color:gold;
+    
+  }
 .contact input, 
 .contact textarea,
 .contact button{
-    width: 15em;
-    height: 15vh;
-    padding:10px;
-    margin:10px 0;
-    border: 3px solid #ccc;
-    border-radius:7px;
+    width: 17em;
+    height: 4vh;
+    background-color: #aaa;
+    /* margin:10px 0; */
+    border: 1px thin #ccc;
+    border-radius:5px;
+    display: flex;
+}
+button{
+  justify-content: center;
+  justify-self: center;
+  /* padding-top: 12px; */
+
+}
+form{
+  justify-self: center;
+}
+#btnn,
+.Name,
+.Email,
+.Message{
+  border-radius: 50%;
+  padding-top: 15px;
 }
 .contact button:hover{
     background: #555;
+    color: gold;
 }
