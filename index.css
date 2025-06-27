@@ -23,6 +23,7 @@
       padding: 1rem;
       display: flex;
       justify-content: center;
+    
       gap: 2rem;
       z-index: 1000;
     }
@@ -30,7 +31,7 @@
     nav a {
       color: #fff;
       text-decoration: none;
-      transition: color 0.3s;
+      transition: color 4s;
       transition: 0.7s ease;
     }
 
@@ -44,12 +45,21 @@
     #projects{
       padding-top: 1px;
     }
+
+    /* Media Query */
+
+   /* @media(max-width:700px){
+     .slides{
+        display:grid;
+      }
+   } */
+   
     section {
       min-height: 10vh;
       padding: 6rem 2rem 2rem;
       opacity: 0;
       transform: translateY(50px);
-      transition: all 0.6s ease;   
+      transition: all 6s ease;   
     }
 
     section.visible {
@@ -120,7 +130,7 @@
       color: #111;
       text-decoration: none;
       border-radius: 15px;
-      transition: transform 0.3s;
+      transition: transform 3s;
     }
     .btn:hover {
       transform: scale(1.05);
@@ -128,7 +138,7 @@
     border:1px solid transparent;  
     color: #fff;
     cursor:pointer;
-    transition: 0.7s ease;
+    transition: 1.8s ease;
     color: gold;
     }
     .text{
@@ -168,18 +178,34 @@
       padding-bottom: 30px;
     }  
     .slides {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
+      /* display: flex; */
+      transition: transform 5s ease-in-out;
     }
+    /* .Display_card determine the display of the card */
     .Display_card{
       display: flex;
-      transition: transform 0.5s ease-in-out;
-      gap: 10px;
+      transition: transform 2s ease-in-out;
+      /* gap: 10px; */
+    }
+    @media(max-width:500px){
+      .Display_card{
+        display: grid; 
+        justify-content: center;
+      }
     }
     .slides img, .service-card {
       min-width: 100%;
       max-width: 100%;
     }
+
+    /* MediaQuery */
+    /* @media(max-width:500px){
+      .hero-carousel{
+        display:grid;
+        grid-template-columns: 2fr;
+      }
+
+    } */
     .hero-carousel img {
       height: 400px;
       object-fit: cover;
@@ -204,14 +230,14 @@
     .hero-text p {
       font-size: 1.2rem;
     }
-/*     
+    
     .carousel-controls {
       position: absolute;
       top: 50%;
       width: 100%;
       text-align: center;
       z-index: 10;
-    } */
+    }
     
     .carousel-controls button {
       background: rgba(0,0,0,0.5);
